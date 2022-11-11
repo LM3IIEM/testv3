@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtvw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Now Playing: "
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtSname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txtvw1"
+        android:layout_toRightOf="@id/txtvw1"
+        android:fontFamily="monospace"
+        android:text="MC"
+        android:textAlignment="viewStart"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/btnplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="490dp"
+        android:backgroundTint="#780C80"
+        android:src="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/btnpause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnplay"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/btnplay"
+        android:backgroundTint="#780C80"
+        android:src="@android:drawable/ic_media_pause" />
+
+    <ImageButton
+        android:id="@+id/btnstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnpause"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/btnpause"
+        android:backgroundTint="#780C80"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="201dp"
+        android:layout_height="183dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="374dp"
+        app:srcCompat="@drawable/f1" />
+
+
+</RelativeLayout>
